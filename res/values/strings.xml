@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">IDBM</string>
+    <string name="search">Search</string>
+    <string name="submit">Submit</string>
+    <string name="movie">Movie</string>
+    <string name="searching">Searching...</string>
+    <string name="no_results">No Results.</string>
+    <string name="action">action</string>
+    <string name="poster">Poster</string>
+</resources>

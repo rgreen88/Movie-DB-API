@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.rynel.idbm.MainActivity"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvLogo"
+        android:src="@drawable/ic_android_black_24dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="75dp"
+        android:contentDescription="@string/poster"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnSearch"
+        android:text="@string/search"
+        android:onClick="buttonPressed"
+        android:layout_gravity="center"/>
+
+    <LinearLayout
+        android:id="@+id/llSubmit"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:visibility="invisible"
+        tools:visibility="visible">
+
+        <EditText
+            android:id="@+id/etQuery"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:hint="@string/movie"
+            android:layout_marginTop="50dp"/>
+
+        <Button
+            android:id="@+id/btnSubmit"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:text="@string/submit"
+            android:onClick="buttonPressed"/>
+
+    </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rvRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </android.support.v7.widget.RecyclerView>
+
+    <TextView
+        android:id="@+id/tvStatus"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>
